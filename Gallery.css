@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+body{
+    background-color:#F2E3D5;
+}
+#welcome{
+    border-radius: 35px;
+    display:flex;
+    justify-content:center;
+    border:solid 1px #3CA6A6;
+    background-color: #3CA6A6;
+    color:#F2E3D5;
+    margin-left:100px;
+    margin-right:100px;
+    
+}
+
+#nav {
+    background-color: #F2E3D5; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    display:flex;
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s;
+    flex-wrap:wrap;
+    z-index:1;
+    left:0;
+    
+  /* Transition effect when sliding down (and up) */
+}
+#nav a{
+    float: left;
+    display: block;
+    color: #3CA6A6;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+
+}
+li{
+    list-style: none; 
+}
+#nav a:hover {
+    /* Swapping colors */
+    color: #FCCD35;
+    background-color: #452822;
+    font-weight: bold;
+    font-size:larger;
+    background-color: #F2E3D5;
+    color: black;
+    
+}
+#header
+{
+    display:flex;
+    gap:20px ;
+    height:100px;
+    justify-content: center;
+    margin-bottom:50px;
+    margin-top:200px;
+    color:#3CA6A6;
+}
+#header img{
+    height: 80px;
+    width:80px;
+}
+.img-gal{
+    width:80%;
+    margin:100px auto 50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap:30px;
+}
+.img-gal img{
+    width:100%;
+    cursor:pointer;
+    transition:0.4s;
+}
+.img-gal img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius:20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+.full-img{
+    width:100%;
+    height:100vh;
+    background: rgba(0,0,0,0.9);
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    justify-content:center;
+    align-items: center;
+    z-index:100;
+}
+.full-img img{
+    margin-top:120px;
+    width:90%;
+    max-width:500px;
+}
+.full-img span{
+    position:absolute;
+    top:5%;
+    right:5%;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
+
+
+
+footer{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#024959;
+    border-top: solid 5px #024959;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 4px;
+}
+footer a{
+    text-align:center;
+    justify-content: center;
+    color:#3CA6A6;
+    bottom:0;
+    height:30px;
+    
+}
+

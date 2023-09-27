@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+    <div id="nav">
+        <li>
+                <a href="default.html">Home</a> 
+                <a href="aboutus.html">About Us</a> 
+                <a href="events.html">Events</a> 
+                <a href="news.html">News</a> 
+                <a href="media.html">Media</a> 
+                <a href="contactus.html">Contact Us</a>
+                <a href="">team</a>
+                <a href="">fixtures</a>
+                <a href="">results</a>
+                <a href="">Gallery</a>
+                <a href="">Facilities</a>
+                <a href="">Merchandise</a>
+                <a href="">Membership</a>
+                <a href="">sposorship</a>
+                <a href="">FAQ</a>
+                <a href="">coaches</a>
+                <a href="">player profiles</a>
+                <a href="">Training program</a>
+                <a href="">Academics</a>
+                <a href="">Alumni</a>
+                <a href="">Social media</a>
+        </li>
+    </div>
+    <div id="header">
+        <img src="./FDD LOGO.PNG" alt="logo">
+        <h1>APU FOOTBALL CLUB</h1>
+        <img src="./FDD LOGO.PNG" alt="logo">
+    </div>
+    <div id="welcome">
+        <h2>Welcome to our Gallery</h2>
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img id="fullImg"src="./WhatsApp画像 2023-06-15 21.00.04.jpg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+    <div class="img-gal">
+        <img src="./WhatsApp画像 2023-06-15 21.00.04.jpg" onclick="openFullImg(this.src)">
+        <img src="./fo.jpg" onclick="openFullImg(this.src)">
+        <img src="./sport1Andsport2.jpg" onclick="openFullImg(this.src)">
+        <img src="./fo.jpg" onclick="openFullImg(this.src)">
+    </div>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        function openFullImg(pic){
+            fullImgBox.style.display="flex";
+            fullImg.src=pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display="none";
+        }
+    </script>
+    <footer>
+        <h1>|</h1>
+        <div>
+            <a href=""><h2>contanct</h2></a>
+        </div>
+        <h1>|</h1>
+        <div>
+            <a href=""><h2>facilities</h2></a>
+        </div>
+        <h1>|</h1>
+        <div>
+            <a href=""><h2>sponsorship</h2></a>
+        </div>
+        <h1>|</h1>
+        <div class="social-links">
+            <a href="https://www.facebook.com/yourpage" target="_blank"><img src="./facebook_icon.png" alt="facebook icon" style="height: 50px; width: 50px;"></a>
+            <a href="https://www.twitter.com/yourpage" target="_blank"><img src="./[CITYPNG.COM]HD Circle Round Twitter Icon PNG - 2310x2311.png" alt="twitter" style="height: 50px; width: 50px;"></a>
+            <a href="https://www.instagram.com/yourpage" target="_blank"><img src="./computer-icons-photography-clip-art-instagram-logo-ccaa9c1ddd18751a58f7760b824d079f.png" alt="insta" style="height: 50px; width: 50px;"></a>
+        </div>
+    </footer>
+</body>
+</html>
